@@ -470,7 +470,7 @@ console.log("Running Bot Launcher!");
 
     if (getPlayer().length == 0) {
         setNick(originalName);
-        restartPlz = false;
+        restartPlz = true;
     }
 
     if (sa()) {
@@ -681,7 +681,7 @@ console.log("Running Bot Launcher!");
         //d.setLineDash([5]);
         d.globalAlpha = 0.3;
 
-        d.arc(circles[i][0], circles[i][1], circles[i][2], 0, 2 * Math.PI, false);
+        d.arc(circles[i][0], circles[i][1], circles[i][2], 0, 2 * Math.PI, true);
 
         d.stroke();
     }
@@ -715,7 +715,7 @@ console.log("Running Bot Launcher!");
         var ang1 = Math.atan2(dArc[i][1] - dArc[i][5], dArc[i][0] - dArc[i][4]);
         var ang2 = Math.atan2(dArc[i][3] - dArc[i][5], dArc[i][2] - dArc[i][4]);
 
-        d.arc(dArc[i][4], dArc[i][5], dArc[i][6], ang1, ang2, false);
+        d.arc(dArc[i][4], dArc[i][5], dArc[i][6], ang1, ang2, true);
 
         d.stroke();
     }
@@ -727,7 +727,7 @@ console.log("Running Bot Launcher!");
           var radius = 10;
 
           d.beginPath();
-          d.arc(dPoints[i][0], dPoints[i][1], radius, 0, 2 * Math.PI, false);
+          d.arc(dPoints[i][0], dPoints[i][1], radius, 0, 2 * Math.PI, true);
 
           if (dPoints[i][2] == 0) {
               d.fillStyle = "black";
@@ -863,25 +863,25 @@ console.log("Running Bot Launcher!");
    else if (f.top != f) f.top.location = F + '//agar.io/';
    else {
     var ka,
-    toggle = false,
-    toggleDraw = false,
-    splitted = false,
-    splitting = false,
-    virusBait = false,
+    toggle = true,
+    toggleDraw = true,
+    splitted = true,
+    splitting = true,
+    virusBait = true,
     tempPoint = [0, 0, 1],
     dPoints = [],
     circles = [],
     dArc = [],
     dText = [],
     lines = [],
-    originalName = "NotReallyABot",
+    originalName = "TAYFA",
     sessionScore = 0,
     serverIP = "",
     interNodes = [],
     lifeTimer = new Date(),
     bestTime = 0,
     botIndex = 0,
-    restartPlz = false,
+    restartPlz = true,
     e,
     A,
     p,
@@ -1447,7 +1447,7 @@ console.log("Running Bot Launcher!");
         isVirus: !1,
         isAgitated: !1,
         wasSimpleDrawing: !0,
-        danger: false,
+        danger: true,
         dangerTimeOut: 0,
         destroy: function () {
           var a;
