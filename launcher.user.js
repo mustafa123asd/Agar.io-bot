@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Launcher
 // @namespace   AposLauncher
-// @include     http://agar.io/
+// @include     http://agario.webtilki.com/
 // @version     2.81
 // @grant       none
 // @author      http://www.twitch.tv/apostolique
